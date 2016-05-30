@@ -1,0 +1,98 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HomePageTabText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="QiuMatterTabText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ImgView_style">
+        <item name="android:padding">3dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="coldStart" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/cold_start</item>
+    </style>
+
+    <style name="me_img">
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">40dp</item>
+    </style>
+
+    <style name="me_layout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="me_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">80dp</item>
+    </style>
+
+    <style name="windows_color_img">
+        <item name="android:id">@+id/tu1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">44dp</item>
+    </style>
+
+    <style name="windows_color_text">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/tu1</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="windows_img">
+        <item name="android:id">@+id/tu2</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_width">44dp</item>
+    </style>
+
+    <style name="windows_text">
+        <item name="android:layout_below">@+id/tu2</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_margin">15dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="windows_img_layout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+</resources>

@@ -1,0 +1,143 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bgColor"
+        tools:context=".view.QiuMe.QiuMeFragment">
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/relativelayout1"
+            style="@style/me_layout"
+            android:layout_marginTop="5dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                style="@style/me_img"
+                android:src="@drawable/default_user_avatar"
+                app:riv_oval="true" />
+
+            <TextView
+                style="@style/me_text"
+                android:text="登陆 / 注册" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout2"
+            style="@style/me_layout"
+            android:layout_below="@+id/relativelayout1"
+            android:layout_marginTop="5dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                style="@style/me_img"
+                android:src="@drawable/ic_manage_my_qiushi"
+                app:riv_oval="true" />
+
+            <TextView
+                style="@style/me_text"
+                android:text="管理我的糗事" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout3"
+            style="@style/me_layout"
+            android:layout_below="@+id/relativelayout2"
+            android:layout_marginTop="1dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                style="@style/me_img"
+                android:src="@drawable/my_collect"
+                app:riv_oval="true" />
+
+            <TextView
+                style="@style/me_text"
+                android:text="我的收藏" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout4"
+            style="@style/me_layout"
+            android:layout_below="@+id/relativelayout3"
+            android:layout_marginTop="1dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                style="@style/me_img"
+                android:src="@drawable/my_particpate"
+                app:riv_oval="true" />
+
+            <TextView
+                style="@style/me_text"
+                android:text="我的参与" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout5"
+            style="@style/me_layout"
+            android:layout_below="@+id/relativelayout4"
+            android:layout_marginTop="5dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                style="@style/me_img"
+                android:src="@drawable/qiuyou"
+                app:riv_oval="true" />
+
+            <TextView
+                style="@style/me_text"
+                android:text="我的糗友群" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout6"
+            style="@style/me_layout"
+            android:layout_below="@+id/relativelayout5"
+            android:layout_marginTop="5dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                style="@style/me_img"
+                android:src="@drawable/ic_theme_mode"
+                app:riv_oval="true" />
+
+            <TextView
+                style="@style/me_text"
+                android:text="夜间模式" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout7"
+            style="@style/me_layout"
+            android:layout_below="@+id/relativelayout6"
+            android:layout_marginTop="1dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                style="@style/me_img"
+                android:src="@drawable/ic_sound_mode_open"
+                app:riv_oval="true" />
+
+            <TextView
+                style="@style/me_text"
+                android:text="视频静音模式" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout8"
+            style="@style/me_layout"
+            android:layout_below="@+id/relativelayout7"
+            android:layout_marginTop="5dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                style="@style/me_img"
+                android:src="@drawable/ic_setting"
+                app:riv_oval="true" />
+
+            <TextView
+                style="@style/me_text"
+                android:text="设置" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

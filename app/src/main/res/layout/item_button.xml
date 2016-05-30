@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_button_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tabTextColor">
+
+    <RelativeLayout
+        android:id="@+id/item_button_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:clickable="true"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="全部" />
+
+        <View
+            android:id="@+id/all_selected"
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/all"
+            android:visibility="visible"
+            android:background="@color/ThemeColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_button_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_button_all"
+        android:clickable="true"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="热门" />
+
+        <View
+            android:id="@+id/hot_selected"
+            android:layout_width="50dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/hot"
+            android:visibility="invisible"
+            android:background="@color/ThemeColor" />
+    </RelativeLayout>
+</RelativeLayout>

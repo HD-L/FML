@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/head_Img"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:src="@drawable/found_item_avatar"
+            app:riv_oval="true" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/head_Img"
+            android:padding="3dp"
+            android:text="匿名用户"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/item_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_rss_hot"
+            android:padding="2dp"
+            android:text="热门" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+        <ImageView
+            android:id="@+id/content_img"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="5dp" />
+
+        <VideoView
+            android:id="@+id/content_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/item_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="评论"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp">
+
+        <ImageView
+            android:id="@+id/item_like"
+            style="@style/ImgView_style"
+            android:src="@drawable/like" />
+
+        <ImageView
+            android:id="@+id/item_hate"
+            style="@style/ImgView_style"
+            android:layout_toRightOf="@+id/item_like"
+            android:src="@drawable/hate" />
+
+        <ImageView
+            android:id="@+id/item_comments"
+            style="@style/ImgView_style"
+            android:layout_toRightOf="@+id/item_hate"
+            android:src="@drawable/operation_comments" />
+
+        <ImageView
+            android:id="@+id/fenxiang"
+            style="@style/ImgView_style"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/share" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/tabTextColor" />
+
+</LinearLayout>

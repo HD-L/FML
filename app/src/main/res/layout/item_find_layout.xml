@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor">
+
+    <RelativeLayout
+        android:id="@+id/item_find_buy_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/found_store" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:text="萌萌哒周边，买买买 > " />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_find_buy_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_find_buy_title"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/item_find_buy_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_theme_mode" />
+
+        <TextView
+            android:id="@+id/item_find_buy_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/item_find_buy_price"
+            android:layout_alignTop="@+id/item_find_buy_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="name"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/item_find_buy_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_find_buy_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/item_find_buy_image"
+            android:text="price"
+            android:textColor="@color/textColor" />
+
+        <TextView
+            android:id="@+id/item_find_buy_mktPrince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_find_buy_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="mktPrice"
+            android:textColor="@color/tabTextColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_find_game_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_find_buy_comment"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/found_ic_game" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:text="精选好玩游戏，停不下来 > " />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_find_game_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_find_game_title"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:visibility="gone"
+       >
+
+        <ImageView
+            android:id="@+id/item_find_game_image"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_theme_mode" />
+
+        <TextView
+            android:id="@+id/item_find_game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="gamename"
+            android:layout_alignTop="@+id/item_find_game_image"
+            android:layout_toEndOf="@+id/item_find_game_image" />
+
+        <TextView
+            android:textSize="10dp"
+            android:id="@+id/item_find_game_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/item_find_game_image"
+            android:layout_toEndOf="@+id/item_find_game_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="介绍" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="18dp"
+            android:background="@color/button"
+            android:text="启动" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_find_video_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_find_game_comment"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/white"
+        android:visibility="gone"
+       >
+
+        <ImageView
+            android:id="@+id/item_find_video_title_Image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/found_chicken" />
+
+        <TextView
+            android:id="@+id/item_find_video_title_name"
+            android:text="小鸡炖蘑菇"
+            android:textSize="18dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@+id/item_find_video_title_Image"
+            android:padding="5dp" />
+
+        <TextView
+            android:text="糗事百科出品大综艺 > "
+            android:id="@+id/item_find_video_title_details"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_find_video_comment"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_find_video_title"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/item_find_video_image"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_theme_mode" />
+
+        <TextView
+            android:id="@+id/item_find_video_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_toEndOf="@+id/item_find_video_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="videoname" />
+
+        <TextView
+            android:id="@+id/item_find_video_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:text="介绍"
+            android:layout_below="@+id/item_find_video_name"
+            android:layout_alignStart="@+id/item_find_video_name" />
+    </RelativeLayout>
+</RelativeLayout>

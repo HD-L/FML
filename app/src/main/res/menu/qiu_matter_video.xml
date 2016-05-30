@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/video_audit"
+        android:icon="@drawable/ic_audit"
+        android:title="审帖"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/video_add"
+        android:icon="@drawable/ic_video"
+        android:title="投稿"
+        app:showAsAction="ifRoom" />
+</menu>
